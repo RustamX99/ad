@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+</head>
+<body class="bg-white dark:bg-[#202C36]">
+    
+    <header class="py-6 px-20 bg-slate-300 dark:bg-[#2B3844]">
+        <div class="flex items-center justify-between">
+            <div class="">
+                <h2 class="font-extrabold text-3xl text-black dark:text-white">Where in the world?</h2>
+            </div>
+            <button id="btn" class="bg-transparent text-black text-xl font-semibold dark:text-white">Dark Mode</button>
+        </div>
+    </header>
+    <main>
+        <section class="pt-12 px-4 sm:px-8 md:px-12 lg:px-20">
+            <div class="flex flex-col gap-4 md:flex-row justify-between items-start md:items-center">
+              <input
+                type="text"
+                name=""
+                class="w-full md:w-[480px] h-[48px] md:h-[56px] bg-transparent border border-gray-400 border-solid rounded-lg px-4 md:pl-10 outline-none text-sm"
+                id="inp"
+                placeholder="Search for a country"
+              />
+              <select
+                name=""
+                id="select"
+                class="border border-solid border-gray-600 bg-transparent dark:text-white w-full md:w-[180px] rounded-lg h-[48px] md:h-[56px] px-4 text-sm"
+              >
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+                <option value="population">From Popular</option>
+                <option value="topopulation">To Popular</option>
+              </select>
+            </div>
+          
+            <div
+              id="container"
+              class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 place-items-center"
+            >
+              <!-- <div class="w-full max-w-[300px] border border-solid border-gray-600 rounded-lg overflow-hidden shadow-md">
+                <div class="w-full object-cover">
+                  <img src="image.png" class="w-full h-[160px] object-cover" alt="flag" />
+                </div>
+                <div class="p-4 flex flex-col gap-2">
+                  <h1 class="font-extrabold text-xl">Granada</h1>
+                  <span class="text-sm font-semibold">Population: </span>
+                  <span class="text-sm font-semibold">Region: </span>
+                  <span class="text-sm font-semibold">Capital: </span>
+                </div>
+              </div> -->
+            </div>
+          </section>
+          
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
